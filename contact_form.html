@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
+</head>
+<body>
+  <form name = "contact" action="" method="post">
+  
+    <label for="nombre">Nombre:</label><br>
+    <input type="text" id="nombre" name="nombre" required maxlength="50" ><br>
+    
+    <label for = "tel">Telefono:</label><br>
+    <input type = "tel" id = "tel" name = "telefono" required pattern ="[0-9]{10}"><br>
+
+    <label for = "email" >Email </label> <br>
+    <input type = "email" id = "email" name = "email" required><br>
+
+    <label for = "subject">Asunto:</label> <br>
+    <select name="select" id="subject" required  name = "subject" required ><br>
+        <option value="opcion 1" selected = "selected" disabled>Elige la opcion</option>
+        <option value="opcion 2"> Vacantes disponibles</option>
+        <option value="opcion 3"> Dudas - Inquietudes</option>
+        <option value="opcion 4"> Capacitaciones</option>
+        <option value="opcion 5"> Otro</option>
+    </select> <br>
+
+    <label for="message"> Mensaje: </label> <br>
+    <textarea name="mensaje" id="message" required maxlength="500"></textarea><br>
+
+    <label for="terms"> Terminos y condiciones: </label> <br>
+    <input type="checkbox" name="terminos y condiciones" id = "terms" required>  <br>
+
+    <label for="attach"> Adjuntar CV: </label> <br>
+    <input type="file" name = "adjuntar cv" id = "attach" required > <br>
+    
+    <label for="disponibility date"> Fecha disponibilidad: </label> <br>
+    <input type="date" name = "fecha disponibilidad" id = "disponibility date" required > <br>
+
+    <label for="send"> Enviar: </label> <br>
+    <input type="submit" name = "enviar" id = "send" required > <br>
+
+  </form>
+</body>
+</html>

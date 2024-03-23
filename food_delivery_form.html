@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food delivery</title>
+</head>
+<body>
+    <form name = "Food delivery" action="" method="get">
+
+            <label for="cname">Nombre :</label><br>
+            <input type="text" id="cname" name="cname" required><br>
+            
+            <label for="phone">Teléfono :</label><br>
+            <input type="tel" id="phone" name="phone" required><br>
+            
+            <label for="email">Correo Electrónico :</label><br>
+            <input type="email" id="email" name="email" required><br>
+            
+            <label for="address">Dirección de entrega:</label><br>
+            <input type="text" id="address" name="address" required><br>
+            
+            <label for="time">Hora de entrega:</label><br>
+            <input type="time" id="time" name="time" required><br>
+            
+            <label for="foodtype">Tipo de comida:</label><br>
+            <select id="foodtype" name="foodtype">
+                <option value="pizza">Pizza</option>
+                <option value="sushi">Sushi</option>
+                <option value="tacos">Tacos</option>
+            </select><br>
+            
+            <label for="spiciness">Nivel de picante:</label><br>
+            <select id="spiciness" name="spiciness">
+                <option value="low">Bajo</option>
+                <option value="medium">Medio</option>
+                <option value="high">Alto</option>
+            </select><br>
+            
+            <label for="instructions">Instrucciones adicionales:</label><br>
+            <textarea id="instructions" name="instructions" placeholder="Opcional"></textarea><br>
+            
+            <label for="coupon">Cupón de descuento:</label><br>
+            <input type="text" id="coupon" name="coupon" placeholder="Opcional"><br>
+            
+            <input type="submit" value="Enviar">
+    </form> 
+</body>
+</html>

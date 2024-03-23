@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product_search_form</title>
+</head>
+<body>
+
+    <form name = "user_registration" action="" method="get">
+        <label for="pname">Nombre del producto:</label><br>
+        <input type="text" id="pname" name="pname" required><br>
+        
+        <label for="category">Filtro por Categoría:</label><br>
+        <select id="category" name="category" multiple>
+          <option value="categoria1">Categoría 1</option>
+          <option value="categoria2">Categoría 2</option>
+          <option value="categoria3">Categoría 3</option>
+          <option value="categoria3">Categoría 4</option>
+          <option value="categoria3">Categoría 5</option>
+        </select><br>
+        
+        <label for="minprice">Filtro por Precio mínimo:</label><br>
+        <input type="number" id="minprice" name="minprice" ><br>
+        
+        <label for="maxprice">Filtro por Precio máximo:</label><br>
+        <input type="number" id="maxprice" name="maxprice"><br>
+        
+        <label for="pubdate">Filtro por Fecha de publicación del producto:</label><br>
+        <input type="date" id="pubdate" name="pubdate"><br>
+        
+        <label for="expdate">Filtro por Fecha de vencimiento:</label><br>
+        <input type="date" id="expdate" name="expdate"><br>
+        
+        <label for="notifications">¿Desea recibir notificaciones?</label><br>
+        <input type="checkbox" id="notifications" name="notifications" value="Yes"><br>
+        
+        <label for="results">Resultados por página:</label><br>
+        <input type="number" id="results" name="results"><br>
+        
+        <input type="submit" value="Buscar">
+      </form> 
+
+    
+</body>
+</html>

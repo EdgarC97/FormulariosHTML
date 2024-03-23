@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encuesta de satisfaccion</title>
+</head>
+<body>
+  <form name = "user_registration" action="" method="post">
+  
+    <label for="nombre">Nombre:</label><br>
+    <input type="text" id="nombre" name="nombre" required maxlength="50" ><br>
+
+    <label for="apellido">Apellido:</label><br>
+    <input type="text" id="apellido name="apellido" required maxlength="50" ><br>
+    
+    <label for = "email" >Email </label> <br>
+    <input type = "email" id = "email" name = "email" required><br>
+
+    <label for = "contraseña">Contraseña:</label><br>
+    <input type = "password" id = "contraseña" name = "contraseña" required><br>
+
+    <label for = "confirmar contraseña">Confirmar contraseña:</label><br>
+    <input type = "password" id = "confirmar contraseña" name = "confirmar contraseña" required minlength="8"><br>
+
+    <label for="profile photo"> Foto de perfil: </label> <br>
+    <input type="file" name = "foto de perfil" id = "profile photo" required > <br>
+
+    <label for="birthday date"> Fecha de nacimiento: </label> <br>
+    <input type="date" name = "fecha de nacimiento" id = "birthday date" required > <br>
+
+    <label for = "sex">Ingrese su sexo:</label> <br>
+    <input type = "radio" id = "male" name = "sex"  value = "masculino" required >
+    <label for = "male">Masculino:</label> <br>
+    <input type = "radio" id = "female" name = "sex" value = "femenino" required >
+    <label for = "female">Femenino:</label> <br>
+    <input type = "radio" id = "other" name = "sex" value = "other"  required >
+    <label for = "other">Otro:</label> <br>
+
+    <label for="country"> Pais: </label>
+    <select name= "pais" id="country" required >
+        <option value="opcion 1" selected = "selected" disabled>Elige el pais</option>
+        <option value="opcion 2"> Colombia</option>
+        <option value="opcion 3"> Venezuela</option>
+        <option value="opcion 4"> Chile</option>
+        <option value="opcion 5"> Ecuador</option>
+        <option value="opcion 6"> Peru</option>
+        <option value="opcion 7"> Otro</option> 
+      </select> <br>
+
+    <label for="city">Ciudad: </label> <br>
+    <input type="text" name = "ciudad" id = "city" required > <br>
+
+    <label for="postal code">Codigo postal: </label> <br>
+    <input type="number" name = "codigo postal" id = "postal code" required > <br>
+ 
+    <label for="biography"> Biografia: </label> <br>
+    <input type="textarea" name = "biografia" id = "biography" required maxlength="500"> <br>
+
+    <label for="terms"> Terminos y condiciones: </label> <br>
+    <input type="checkbox" name="terminos y condiciones" id = "terms" required>  <br>
+
+    <label for="send"> Enviar: </label> <br>
+    <input type="submit" name = "enviar" id = "send" required > <br>
+
+  </form>
+</body>
+</html>

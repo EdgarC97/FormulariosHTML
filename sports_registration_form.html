@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports registration</title>
+</head>
+<body>
+    <form name = "sports_registration_form" action="" method="get">
+        <label for="fname">Nombre :</label><br>
+        <input type="text" id="fname" name="fname" required><br>
+        
+        <label for="lname">Apellido :</label><br>
+        <input type="text" id="lname" name="lname" required><br>
+        
+        <label for="email">Correo Electrónico :</label><br>
+        <input type="email" id="email" name="email" required><br>
+        
+        <label for="bdate">Fecha de nacimiento :</label><br>
+        <input type="date" id="bdate" name="bdate" required><br>
+        
+        <label for="sex">Sexo:</label><br>
+        <select id="sex" name="sex" required>
+          <option value="male">Masculino</option>
+          <option value="female">Femenino</option>
+          <option value="other">Otro</option>
+        </select><br>
+        
+        <label for="country"> Pais: </label><br>
+        <select name= "pais" id="country" required >
+            <option value="opcion 1" selected = "selected" disabled>Elige el pais</option>
+            <option value="opcion 2"> Colombia</option>
+            <option value="opcion 3"> Venezuela</option>
+            <option value="opcion 4"> Chile</option>
+            <option value="opcion 5"> Ecuador</option>
+            <option value="opcion 6"> Peru</option>
+            <option value="opcion 7"> Otro</option> 
+          </select> <br>
+        
+        <label for="city">Ciudad de origen :</label><br>
+        <input type="text" id="city" name="city" required><br>
+        
+        <label for="postcode">Código postal:</label><br>
+        <input type="text" id="postcode" name="postcode" required><br>
+        
+        <label for="sport">Deporte que practica:</label><br>
+        <input type="text" id="sport" name="sport" required><br>
+        
+        <label for="experience">Nivel de experiencia:</label><br>
+        <select id="experience" name="experience" required>
+          <option value="beginner">Principiante</option>
+          <option value="intermediate">Intermedio</option>
+          <option value="advanced">Avanzado</option>
+        </select><br>
+        
+        <label>¿Desea recibir notificaciones?</label><br>
+        <input type="radio" id="Yes" name="notifications" value="Yes">
+        <label for="Yes">Sí</label><br>
+        <input type="radio" id="No" name="notifications" value="No">
+        <label for="No">No</label><br>
+        
+        <label>¿Desea recibir promociones?</label><br>
+        <input type="radio" id="promoYes" name="promotions" value="Yes">
+        <label for="promoYes">Sí</label><br>
+        <input type="radio" id="promoNo" name="promotions" value="No">
+        <label for="promoNo">No</label><br>
+        
+        <input type="submit" value="Enviar">
+
+    </form> 
+</body>
+</html>

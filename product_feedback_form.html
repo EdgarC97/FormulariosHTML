@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product feedback</title>
+</head>
+<body>
+    <form name = "Product_feedback" action="" method="get">
+     
+        <label for="cname">Nombre :</label><br>
+        <input type="text" id="cname" name="cname" required><br>
+        
+        <label for="email">Correo Electrónico :</label><br>
+        <input type="email" id="email" name="email" required><br>
+        
+        <label for="pdate">Fecha de compra:</label><br>
+        <input type="date" id="pdate" name="pdate" required><br>
+        
+        <label for="rating">Calificación del producto:</label><br>
+        <input type="number" id="rating" name="rating" min="1" max="5" placeholder="Del 1 al 5" style="width: 100px;"><br>
+        
+        <label for="recommend">¿Recomendaría el producto?</label><br>
+        <select id="recommend" name="recommend">
+          <option value="yes">Sí</option>
+          <option value="no">No</option>
+        </select><br>
+        
+        <label for="like">¿Qué le gustó del producto?</label><br>
+        <textarea id="like" name="like"></textarea><br>
+        
+        <label for="improve">¿Qué le gustaría que mejoráramos?</label><br>
+        <textarea id="improve" name="improve"></textarea><br>
+        
+        <input type="submit" value="Enviar">
+
+    </form> 
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter suscription</title>
+</head>
+<body>
+    <form name = "Newsletter_suscription" action="" method="get">
+     
+        <label for="cname">Nombre:</label><br>
+        <input type="text" id="cname" name="cname" required><br>
+        
+        <label for="gender">Género:</label><br>
+        <select id="gender" name="gender">
+          <option value="male">Masculino</option>
+          <option value="female">Femenino</option>
+          <option value="other">Otro</option>
+        </select><br>
+        
+        <label for="email">Correo Electrónico :</label><br>
+        <input type="email" id="email" name="email" required><br>
+        
+        <label for="interests">Intereses:</label><br>
+        <select id="interests" name="interests" multiple>
+          <option value="tech">Tecnología</option>
+          <option value="sports">Deportes</option>
+          <option value="music">Música</option>
+          <option value="music">Artes</option>
+          <option value="music">Juegos</option>
+        </select><br>
+        
+        <label for="bdate">Fecha de nacimiento:</label><br>
+        <input type="date" id="bdate" name="bdate"><br>
+        
+        
+        <label>¿Desea recibir notificaciones?</label><br>
+        <input type="radio" id="notifYes" name="notifications" value="Yes">
+        <label for="notifYes">Sí</label><br>
+        <input type="radio" id="notifNo" name="notifications" value="No">
+        <label for="notifNo">No</label><br>
+        
+        <label>¿Desea recibir promociones?</label><br>
+        <input type="radio" id="Yes" name="promotions" value="Yes">
+        <label for="Yes">Sí</label><br>
+        <input type="radio" id="No" name="promotions" value="No">
+        <label for="No">No</label><br>
+        
+        <input type="submit" value="Suscribirse">
+
+    </form> 
+</body>
+</html>

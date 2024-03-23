@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encuesta de satisfaccion</title>
+</head>
+<body>
+  <form name = "satisfaction_survey" action="" method="get">
+  
+    <label for="nombre">Nombre:</label><br>
+    <input type="text" id="nombre" name="nombre" required maxlength="50" ><br>
+    
+    <label for = "email" >Email </label> <br>
+    <input type = "email" id = "email" name = "email" required><br>
+
+    <label for = "age">Edad:</label><br>
+    <input type = "number" id = "age" name = "edad" required min ="18" max ="99"><br>
+
+    <label for = "sex">Ingrese su sexo:</label> <br>
+    <input type = "radio" id = "male" name = "sex"  value = "masculino" required >
+    <label for = "male">Masculino:</label> <br>
+    <input type = "radio" id = "female" name = "sex" value = "femenino" required >
+    <label for = "female">Femenino:</label> <br>
+    <input type = "radio" id = "other" name = "sex" value = "other"  required >
+    <label for = "other">Otro:</label> <br>
+
+    <label for="service date"> Fecha de uso del servicio: </label> <br>
+    <input type="date" name="fecha de uso del servicio" id="service date" required ><br>
+
+    <label for="service calification"> Calificacion del servicio: </label> <br>
+    <input type="range" name="calificacion del servicio" id = "service calification" required min = "1" max = "5">  <br>
+
+    <label for="service recomendation"> ¿Recomendario nuestro servicio?: </label> <br>
+    <input type="checkbox" name = "recomendaria nuestro servicio?" id = "service recomendation" required > <br>
+
+    <label for="improve"> ¿Que le gustaria que mejoraramos?: </label> <br>
+    <input type="textarea" name = "que le gustaria que mejoraramos?" id = "improve" required  maxlength="500"> <br>
+
+    <label for="service like"> ¿Que le gustò de nuestro servicio?: </label> <br>
+    <input type="textarea" name = "que le gustò de nuestro servicio?" id = "service like" required maxlength="500"> <br>
+
+    <label for="send"> Enviar: </label> <br>
+    <input type="submit" name = "enviar" id = "send" required > <br>
+
+  </form>
+</body>
+</html>

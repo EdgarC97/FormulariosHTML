@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online reservation</title>
+</head>
+<body>
+    <form name = "online_reservation" action="" method="get">
+     
+        <label for="cname">Nombre :</label><br>
+        <input type="text" id="cname" name="cname" required><br>
+        
+        <label for="phone">Teléfono :</label><br>
+        <input type="tel" id="phone" name="phone" required><br>
+        
+        <label for="email">Correo Electrónico :</label><br>
+        <input type="email" id="email" name="email" required><br>
+        
+        <label for="resdate">Fecha de reserva:</label><br>
+        <input type="date" id="resdate" name="resdate" required><br>
+        
+        <label for="restime">Hora de reserva:</label><br>
+        <input type="time" id="restime" name="restime" required><br>
+        
+        <label for="people">Número de personas:</label><br>
+        <input type="number" id="people" name="people" required ><br>
+        
+        <label for="diet">Requerimientos dietéticos especiales:</label><br>
+        <textarea id="diet" name="diet"></textarea><br>
+        
+        <label for="notifications">¿Desea recibir notificaciones?</label><br>
+        <input type="checkbox" id="notifications" name="notifications" value="Yes"><br>
+        
+        <label for="promotions">¿Desea recibir promociones?</label><br>
+        <input type="checkbox" id="promotions" name="promotions" value="Yes"><br>
+        
+        <input type="submit" value="Reservar">
+
+    </form> 
+</body>
+</html>

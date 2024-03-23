@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan request</title>
+</head>
+<body>
+    <form name = "loan_request_form" action="" method="get">
+        <label for="fname">Nombre del solicitante:</label><br>
+        <input type="text" id="fname" name="fname" required><br>
+        
+        <label for="lname">Apellido del solicitante:</label><br>
+        <input type="text" id="lname" name="lname" required><br>
+        
+        <label for="email">Correo Electrónico del solicitante:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        
+        <label for="phone">Teléfono del solicitante:</label><br>
+        <input type="tel" id="phone" name="phone" required><br>
+        
+        <label for="amount">Monto solicitado:</label><br>
+        <input type="text" id="amount" name="amount" required placeholder="$"><br>
+        
+        <label for="term">Plazo de pago:</label><br>
+        <select id="term" name="term" required>
+          <option value="3">3 meses</option>
+          <option value="6">6 meses</option>
+          <option value="12">12 meses</option>
+        </select><br>
+        
+        <label for="income">Ingresos mensuales:</label><br>
+        <select id="income" name="income" required>
+          <option value="1-2">Entre 1 y 2 SMLV</option>
+          <option value="2-5">Entre 2 y 5 SMLV</option>
+          <option value="5+">Más de 5 SMLV</option>
+        </select><br>
+        
+        <label for="expenses">Gastos mensuales:</label><br>
+        <input type="text" id="expenses" name="expenses" required placeholder="$"><br>
+        
+        <input type="submit" value="Enviar">
+      </form> 
+      </form> 
+
+    </form> 
+</body>
+</html>
